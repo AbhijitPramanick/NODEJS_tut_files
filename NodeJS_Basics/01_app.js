@@ -1,4 +1,4 @@
-// LECTURE 4 : READING INPUT AND WRITING OUTPUT
+// ***** LECTURE 4 : READING INPUT AND WRITING OUTPUT *****
 // https://youtu.be/VP55JN3y6uI?si=cf542niEDIf26joE
 
 // console.log("Hello world, this is Node JS");
@@ -19,3 +19,12 @@
 // });
 
 // --------------------------------------
+// ***** LECTURE 5 : READING AND WRITING TO A FILE *****
+
+//Reading from a file
+const readline = require("readline");
+const fs = require("fs");
+const textIn = fs.readFileSync("./files/input.txt", "utf-8");
+console.log(textIn);
+
+//Writing to a file
